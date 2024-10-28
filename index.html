@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Home And Search -->
+      <div class="commonStyle" id="a">
+        <div class="home">
+          <img src="./Assets/icons/house-door.svg" alt="" srcset="" /> Home
+        </div>
+
+        <div class="search">
+          <img src="./Assets/icons/search.svg" alt="" srcset="" /> Search
+        </div>
+      </div>
+      <!-- Playlists And Songs -->
+      <div class="commonStyle" id="b">
+        <div class="header">
+          <div class="icon">
+            <img src="./Assets/icons/chevron-left.svg" alt="" srcset="" />
+            <img src="./Assets/icons/chevron-right.svg" alt="" srcset="" />
+          </div>
+          <div class="loginSignup">
+            <a href="">Sign In</a>/<a href="">Sign Up</a>
+          </div>
+        </div>
+        <div class="wrap">
+          <!-- Playlist Section -->
+          <div class="playlists">
+            <div class="hText">Playlists</div>
+
+            <div class="container">
+              <div class="card innerStyle">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Covers/pexels-cartist-3642351.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">All Songs</div>
+              </div>
+            </div>
+          </div>
+          <!-- Sidhu Moose Wala -->
+          <div class="sidhu outerStyle">
+            <div class="hText">Sidhu Moose Wala</div>
+            <div class="container">
+              <span class="card innerStyle" onclick="playsong('levels')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Sidhu/Levels downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Levels</div>
+              </span>
+              <div class="card2 innerStyle" onclick="playsong('tnf')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Sidhu/295 downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">295</div>
+              </div>
+              <div class="card3 innerStyle" onclick="playsong('ck')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Sidhu/cele.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Celebrity Killer</div>
+              </div>
+              <div class="card4 innerStyle" onclick="playsong('samebeef')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Sidhu/Same Beef downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Same Beef</div>
+              </div>
+            </div>
+          </div>
+          <!-- Arjan Dhillon -->
+          <div class="sidhu outerStyle">
+            <div class="hText">Arjan Dhillon</div>
+            <div class="container">
+              <div class="card innerStyle" onclick="playsong('tf')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Arjan/25-25 downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">25-25</div>
+              </div>
+              <div class="card2 innerStyle" onclick="playsong('hs')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Arjan/Hot Shit downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Hot Shit</div>
+              </div>
+              <div class="card3 innerStyle" onclick="playsong('jawani')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Arjan/Jawani downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Jawani</div>
+              </div>
+              <div class="card4 innerStyle" onclick="playsong('jjvg')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Arjan/Je Jatt Vigad Geya downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Je Jatt Vigad Gya</div>
+              </div>
+            </div>
+          </div>
+          <!-- Varinder Brar -->
+          <div class="sidhu outerStyle">
+            <div class="hText">Varinder Brar</div>
+            <div class="container">
+              <div class="card innerStyle" onclick="playsong('twb')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Varinder/12 Bande downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">12 Bande</div>
+              </div>
+              <div class="card2 innerStyle" onclick="playsong('ej')">
+                <img
+                  onclick="playAudio()"
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Varinder/El Jatt downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">El Jatt</div>
+              </div>
+              <div class="card3 innerStyle" onclick="playsong('kaafla')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Varinder/Kaafla downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Kaafla</div>
+              </div>
+              <div class="card4 innerStyle" onclick="playsong('thaa')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Varinder/Thaa downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Thaa</div>
+              </div>
+            </div>
+          </div>
+          <!-- Parmish Verma -->
+          <div class="sidhu outerStyle">
+            <div class="hText">Parmish Verma</div>
+            <div class="container">
+              <div class="card innerStyle" onclick="playsong('ajm')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Parmish/Aam Jahe Munde downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Aam Jahe Munde</div>
+              </div>
+              <div class="card2 innerStyle" onclick="playsong('gnk')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Parmish/Gaal Ni Kadni downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Gaal Ni Kadni</div>
+              </div>
+              <div class="card3 innerStyle" onclick="playsong('cma')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Parmish/Le Chakk Main Aa Gya downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Le Chakk Mein Aa Gya</div>
+              </div>
+              <div class="card4 innerStyle" onclick="playsong('rd')">
+                <img
+                  class="imgSizing"
+                  src="./Assets/Playlist/Playlist Songs/Parmish/Rubicon Drill downloaded from SpotiSongDownloader.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="playlistName">Rubicon Drill</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="opts">
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Center</li>
+            <li>Cookies</li>
+            <li>About Ads</li>
+            <li>Accessibility</li>
+            <li>© Copyright</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Artists -->
+      <div class="commonStyle" id="c">
+        <div class="holder">
+          <div class="titleArtist">Artists</div>
+
+          <div class="searchBar">
+            <div class="search">
+              <img src="./Assets/icons/search.svg" alt="" srcset="" />
+            </div>
+            <div>Recently Played</div>
+          </div>
+
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/Sidhu/Sidhu Moose Wala64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">Sidhu Moose Wala</div>
+          </div>
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/Parmish/Parmish Verma64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">Parmish Verma</div>
+          </div>
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/Babbu Maan64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">Babbu Maan</div>
+          </div>
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/Karan Aujla64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">Karan Aujla</div>
+          </div>
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/Varinder/Varinder Brar64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">Varinder Brar</div>
+          </div>
+          <div class="artistCard">
+            <div class="artistImg">
+              <img
+                class="artistImage"
+                src="./Assets/Playlist/Playlist Songs/AP Dhillon64x64 downloaded from SpotiSongDownloader.jpg"
+                alt=""
+              />
+            </div>
+            <div class="artistName">AP Dhillon</div>
+          </div>
+        </div>
+      </div>
+      <!-- Music Controls -->
+      <div class="commonStyle" id="d">
+        <div id="myProgressBar">
+          <input
+            type="range"
+            name=""
+            class="range-field"
+            id="bar1"
+            value="0"
+            min="0"
+            max="100"
+          />
+
+          <input
+            id="volumeSlider"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="100"
+          />
+          <div id="time">00:00/00:00</div>
+          <div class="controls">
+            <div class="enclose">
+            <div class="back">
+              <img src="./Assets/icons/skip-start-fill.svg" alt="" />
+            </div>
+            <div  id="playicon">
+              <img id="play" class="fa-circle-play" src="./Assets/icons/play-fill.svg" alt="" srcset="" />
+            </div>
+            <div class="forward">
+              <img src="./Assets/icons/skip-end-fill.svg" alt="" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
