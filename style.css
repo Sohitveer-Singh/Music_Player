@@ -246,7 +246,7 @@ ul,li{
 
 #artistInfo{
     position: absolute;
-    z-index: 2;
+    z-index: -1;
     top: 0px;
     left: 0px;
     height: 100vh;
