@@ -71,7 +71,7 @@ let aboutArtist = document.getElementById("about")
 let artistName = document.getElementById("singerName")
 
 function indexChange() {
-    aboutSection.style.zIndex = "-1"
+    aboutSection.style.zIndex = "-2"
 }
 
 function moosaAbout() {
