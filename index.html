@@ -48,7 +48,7 @@
           </div>
           <!-- Sidhu Moose Wala -->
           <div class="sidhu outerStyle">
-            <div class="hText">Sidhu Moose Wala</div>
+            <div class="hText">Sidhu Moose Wala <span onclick="moosaAbout()" class="infoIcon" ><img id="sidhuInfoIcon" src="./Assets/icons/info.svg" alt=""></span></div>
             <div class="container">
               <span class="card innerStyle" onclick="playsong('levels')">
                 <img
@@ -90,7 +90,7 @@
           </div>
           <!-- Arjan Dhillon -->
           <div class="sidhu outerStyle">
-            <div class="hText">Arjan Dhillon</div>
+            <div class="hText">Arjan Dhillon <span onclick="arjanAbout()" class="infoIcon" ><img id="sidhuInfoIcon" src="./Assets/icons/info.svg" alt=""></span></div>
             <div class="container">
               <div class="card innerStyle" onclick="playsong('tf')">
                 <img
@@ -132,7 +132,7 @@
           </div>
           <!-- Varinder Brar -->
           <div class="sidhu outerStyle">
-            <div class="hText">Varinder Brar</div>
+            <div class="hText">Varinder Brar <span onclick="varinderAbout()" class="infoIcon" ><img id="sidhuInfoIcon" src="./Assets/icons/info.svg" alt=""></span></div>
             <div class="container">
               <div class="card innerStyle" onclick="playsong('twb')">
                 <img
@@ -175,7 +175,7 @@
           </div>
           <!-- Parmish Verma -->
           <div class="sidhu outerStyle">
-            <div class="hText">Parmish Verma</div>
+            <div class="hText">Parmish Verma <span onclick="parmishAbout()" class="infoIcon" ><img id="sidhuInfoIcon" src="./Assets/icons/info.svg" alt=""></span></div>
             <div class="container">
               <div class="card innerStyle" onclick="playsong('ajm')">
                 <img
@@ -240,7 +240,7 @@
             <div>Recently Played</div>
           </div>
 
-          <div class="artistCard">
+          <div class="artistCard" id="sidhuCard"  >
             <div class="artistImg">
               <img
                 class="artistImage"
@@ -339,6 +339,18 @@
         </div>
       </div>
     </div>
+
+    <div id="artistInfo">
+      <div class="sidhuInfo">
+        <div class="up">
+        <h1 id="singerName" ></h1>
+        <div class="close" onclick="indexChange()"><img src="./Assets/icons/x.svg" alt=""></div>
+      </div>
+        <div id="about"></div>
+      </div>
+    </div>
+
+
 
     <script src="./script.js"></script>
   </body>

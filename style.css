@@ -25,6 +25,7 @@ body
     gap: 10px;
     background-color: #000;
     height: 100vh;
+    z-index: 1;
 }
 
 .commonStyle{
@@ -125,6 +126,8 @@ a{
 
 .hText{
     font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .container{
@@ -239,4 +242,48 @@ ul,li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#artistInfo{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidhuInfo{
+    height: 56vh;
+    width: 56vw;
+    background-color: #030303ee;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: auto;
+}
+
+
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+#about{
+    padding: 6px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#sidhuInfoIcon{
+    padding-top: 6px;
+    height: 40px;
 }
