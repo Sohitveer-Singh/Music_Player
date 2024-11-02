@@ -194,19 +194,19 @@ ul,li{
     font-size: x-large;
 }
 
-#b::-webkit-scrollbar-track,c::-webkit-scrollbar-track,.container::-webkit-scrollbar-track
+#b::-webkit-scrollbar-track,c::-webkit-scrollbar-track,.container::-webkit-scrollbar-track,.sidhuInfo::-webkit-scrollbar-track
 {
 	background-color: transparent;
     scrollbar-width: none;
 }
 
-#b::-webkit-scrollbar,#c::-webkit-scrollbar,.container::-webkit-scrollbar
+#b::-webkit-scrollbar,#c::-webkit-scrollbar,.container::-webkit-scrollbar,.sidhuInfo::-webkit-scrollbar
 {
 	background-color: transparent;
     scrollbar-width: none;
 }
 
-#b::-webkit-scrollbar-thumb,#c::-webkit-scrollbar-thumb,.container::-webkit-scrollbar-thumb
+#b::-webkit-scrollbar-thumb,#c::-webkit-scrollbar-thumb,.container::-webkit-scrollbar-thumb,.sidhuInfo::-webkit-scrollbar-thumb
 {
 	background-color: transparent;
     scrollbar-width: none;
