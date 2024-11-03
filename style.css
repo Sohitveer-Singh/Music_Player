@@ -289,9 +289,10 @@ ul,li{
     height: 40px;
 }
 
-.radio{
+/* .radio{
     display: inline-block;
     position: absolute;
     z-index: 1;
     bottom: 0vh;
-}
+    width: 8vw;
+} */
