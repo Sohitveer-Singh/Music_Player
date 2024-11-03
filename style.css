@@ -288,3 +288,11 @@ ul,li{
     padding-top: 6px;
     height: 40px;
 }
+
+.radio{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0vh;
+    height: 92px;
+}
