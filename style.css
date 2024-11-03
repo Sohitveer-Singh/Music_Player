@@ -22,7 +22,7 @@ body
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 3fr ;
-    grid-template-rows: 1fr 4fr .85fr;
+    grid-template-rows: 1fr 4fr .90fr;
     gap: 10px;
     background-color: #000;
     height: 100vh;
@@ -294,5 +294,4 @@ ul,li{
     position: absolute;
     z-index: 1;
     bottom: 0vh;
-    height: 92px;
 }
