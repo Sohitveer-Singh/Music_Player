@@ -36,6 +36,8 @@ function playsong(songName) {
   songPLayer.play();
   currentAudio = songPLayer;
 
+  masterPlay.src = "Assets/icons/pause-fill.svg";
+
   songPLayer.addEventListener("timeupdate", () => {
     let progress = parseInt(
       (currentAudio.currentTime / currentAudio.duration) * 100
@@ -52,8 +54,11 @@ function playsong(songName) {
 masterPlay.addEventListener("click", () => {
   if (currentAudio.paused) {
     currentAudio.play();
+    masterPlay.src = "Assets/icons/pause-fill.svg";
   } else if (currentAudio) {
     currentAudio.pause();
+    
+    masterPlay.src = "Assets/icons/play-fill.svg";
   }
 });
 
