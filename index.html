@@ -36,7 +36,7 @@
             <div class="hText">Playlists</div>
 
             <div class="container">
-              <div class="card innerStyle">
+              <div class="card innerStyle" onclick="Playlist()">
                 <img
                   class="imgSizing"
                   src="./Assets/Playlist/Playlist Covers/pexels-cartist-3642351.jpg"
@@ -326,13 +326,13 @@
           <div id="time">00:00/00:00</div>
           <div class="controls">
             <div class="enclose">
-            <div class="back">
+            <div class="back" id="previousSong" >
               <img src="./Assets/icons/skip-start-fill.svg" alt="" />
             </div>
             <div  id="playicon">
               <img id="play" class="fa-circle-play" src="./Assets/icons/play-fill.svg" alt="" srcset="" />
             </div>
-            <div class="forward">
+            <div class="forward" id="nextSong" >
               <img src="./Assets/icons/skip-end-fill.svg" alt="" />
             </div>
           </div>
