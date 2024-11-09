@@ -28,8 +28,6 @@ let songPlayOrder = new Array();
 function playsong(songName) {
   const songPLayer = new Audio(songList[songName]);
   
-  console.log(songList[songName])
-
   if (currentAudio) {
     currentAudio.pause();
   }
@@ -160,6 +158,7 @@ function Playlist() {
       console.log(i);
       audio.src = playlist[i];
       audio.play();
+      masterPlay.src = "Assets/icons/pause-fill.svg";
     },
     true
   );
@@ -172,7 +171,7 @@ function Playlist() {
       i = i-1;
       audio.src = playlist[i];
       currentAudio.play();
-
+      masterPlay.src = "Assets/icons/pause-fill.svg";
     }
   })
 
@@ -181,6 +180,7 @@ function Playlist() {
       i = i+1;
       audio.src = playlist[i];
       currentAudio.play();
+      masterPlay.src = "Assets/icons/pause-fill.svg";
     }
 
   })
@@ -191,6 +191,8 @@ function Playlist() {
   }
   songPLayer.play();
   currentAudio = songPLayer;
+
+  masterPlay.src = "Assets/icons/pause-fill.svg";
 
   songPLayer.addEventListener("timeupdate", () => {
     let progress = parseInt(
